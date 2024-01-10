@@ -414,11 +414,11 @@ function run() {
 					arg: url,
 					subtitle: urlSubtitle,
 				},
-				shift: {
-					// opening in second library not implemented yet
+				// opening in second library not implemented yet
+				"fn+shift": {
 					valid: isFirstLibrary,
 					subtitle: isFirstLibrary
-						? `⇧: Open in ${openEntriesIn}`
+						? `fn+⇧: Open in ${openEntriesIn}`
 						: "⛔: Opening entries in 2nd library not yet implemented.",
 				},
 				"fn+cmd": {
@@ -427,10 +427,10 @@ function run() {
 						? "⌘+fn: Delete entry from BibTeX file (⚠️ irreversible)."
 						: "⛔: Deleting entries in 2nd library not yet implemented.",
 				},
-				"ctrl+alt+cmd": {
+				"fn+ctrl+alt+cmd": {
 					valid: Boolean(attachment),
 					subtitle: attachment
-						? "⌃⌥⌘: Open Attachment File"
+						? "fn+⌃⌥⌘: Open Attachment File"
 						: "⛔: Entry has no attachment file.",
 					arg: attachment,
 				},

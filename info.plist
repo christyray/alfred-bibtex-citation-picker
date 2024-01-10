@@ -512,9 +512,9 @@
 				<key>destinationuid</key>
 				<string>DD59F90F-8FD2-486D-A8A8-2FFA47DE45F6</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>1179648</integer>
 				<key>modifiersubtext</key>
-				<string>⌘: Append Page Numbers</string>
+				<string>⇧⌘: Append Page Numbers</string>
 				<key>vitoclose</key>
 				<true/>
 			</dict>
@@ -530,6 +530,16 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>E92A1458-08BB-4A4A-BE08-54C2FA5DE645</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>⇧: Paste link to literature note</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>E451F6F1-8CE4-44B5-90E2-8B457B48C81C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -542,9 +552,9 @@
 				<key>destinationuid</key>
 				<string>A1A6DEC2-1AF1-4110-9DA9-01400A1902FF</string>
 				<key>modifiers</key>
-				<integer>1179648</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>⌘⇧: Paste without brackets</string>
+				<string>⌘: Paste without brackets</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -562,9 +572,9 @@
 				<key>destinationuid</key>
 				<string>AF09AE5D-C351-4190-8AA6-B1924D88B22F</string>
 				<key>modifiers</key>
-				<integer>131072</integer>
+				<integer>8519680</integer>
 				<key>modifiersubtext</key>
-				<string>⇧: Open in {var:open_entries_in}</string>
+				<string>fn+⇧: Open in {var:open_entries_in}</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -572,9 +582,9 @@
 				<key>destinationuid</key>
 				<string>7E602D21-0A78-4DC6-A807-28A5602897C8</string>
 				<key>modifiers</key>
-				<integer>8388608</integer>
+				<integer>8912896</integer>
 				<key>modifiersubtext</key>
-				<string>fn: Auto-File PDF (selected in Finder)</string>
+				<string>fn+⌥: Auto-File PDF (selected in Finder)</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -592,9 +602,9 @@
 				<key>destinationuid</key>
 				<string>09F708C6-75EE-48E9-9D2F-3F9F8276971B</string>
 				<key>modifiers</key>
-				<integer>1835008</integer>
+				<integer>10223616</integer>
 				<key>modifiersubtext</key>
-				<string>⌃⌥⌘: Open Attachment File</string>
+				<string>fn⌃⌥⌘: Open Attachment File</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -612,9 +622,9 @@
 				<key>destinationuid</key>
 				<string>5A83CD14-6282-49D4-9482-F89DC21A185F</string>
 				<key>modifiers</key>
-				<integer>786432</integer>
+				<integer>8388608</integer>
 				<key>modifiersubtext</key>
-				<string>^⌥: Open Literature Note</string>
+				<string>fn: Open Literature Note</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -721,6 +731,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E92A1458-08BB-4A4A-BE08-54C2FA5DE645</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F503846-F6C8-4B2A-8355-E8D54361A5BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F4AE9C32-4A15-421F-A8FE-C71500135BA3</key>
 		<array>
 			<dict>
@@ -778,11 +801,11 @@
 				<key>focusedappvariablename</key>
 				<string>focusedapp</string>
 				<key>hotkey</key>
-				<integer>42</integer>
+				<integer>33</integer>
 				<key>hotmod</key>
 				<integer>1048576</integer>
 				<key>hotstring</key>
-				<string>#</string>
+				<string>[</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -974,6 +997,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>7F503846-F6C8-4B2A-8355-E8D54361A5BA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -993,6 +1035,23 @@
 			<string>1C0964D1-AA81-478A-B406-28E96DDD9E82</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>[[{var:literature_note_short}/{query}|{var:_format_citekey_prefix}{query}{var:_format_citekey_suffix}]]</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E92A1458-08BB-4A4A-BE08-54C2FA5DE645</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1512,6 +1571,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>✅ Downloaded</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>52B9C3DF-F265-4201-9508-55BA584F851F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1539,27 +1619,6 @@ echo "$*"</string>
 			<string>FC604ACD-94BE-4F8B-B73C-8475943837C7</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<true/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>✅ Downloaded</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>52B9C3DF-F265-4201-9508-55BA584F851F</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2370,6 +2429,17 @@ to set a hotkey for adding DOI/ISBN</string>
 			<key>ypos</key>
 			<real>895</real>
 		</dict>
+		<key>7F503846-F6C8-4B2A-8355-E8D54361A5BA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>note</key>
+			<string>paste without brackets</string>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>175</real>
+		</dict>
 		<key>824D0711-2DC5-46B0-8EA1-BD0A74DF5AAA</key>
 		<dict>
 			<key>colorindex</key>
@@ -2566,6 +2636,17 @@ to set a hotkey for adding DOI/ISBN</string>
 			<real>1250</real>
 			<key>ypos</key>
 			<real>340</real>
+		</dict>
+		<key>E92A1458-08BB-4A4A-BE08-54C2FA5DE645</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>note</key>
+			<string>add prefix, suffix, &amp; path</string>
+			<key>xpos</key>
+			<real>560</real>
+			<key>ypos</key>
+			<real>205</real>
 		</dict>
 		<key>F4AE9C32-4A15-421F-A8FE-C71500135BA3</key>
 		<dict>
@@ -2874,6 +2955,48 @@ to set a hotkey for adding DOI/ISBN</string>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>alfred_bar_width</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>filtermode</key>
+				<integer>2</integer>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<key>description</key>
+			<string>Custom .csl file for to use for the single-bibliography-pasting feature. (By default, or if this setting is left empty, uses the built-in "APA-7th" style.)</string>
+			<key>label</key>
+			<string>Custom .csl</string>
+			<key>type</key>
+			<string>filepicker</string>
+			<key>variable</key>
+			<string>csl_for_pandoc</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Relative path from Obsidian vault to folder containing your literature notes (as markdown files). Only required for indicating literature notes via icon, and for creating/opening literature notes with `⌥⌃↵`.</string>
+			<key>label</key>
+			<string>Literature Note Folder Short Path</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>literature_note_short</string>
 		</dict>
 	</array>
 	<key>variables</key>
